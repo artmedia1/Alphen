@@ -19,24 +19,28 @@ import java.util.Arrays;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 public class GoogleSearch extends Command {
-    public String description = "**!google [query]**- Responds the top 3 links from google for your query";
+    protected String description = "**!google query**- Responds the top 3 links from google for your **query**";
     private String[] credentials = new String[2];
     Dotenv env = Dotenv.load();
-    public GoogleSearch(){
+
+    public GoogleSearch() {
         super("!google");
         this.credentials[0] = env.get("GOOGLE_SEARCH_ENGINE_ID");
         this.credentials[1] = env.get("GOOGLE_API_KEY");
     }
+
     @Override
     public void execute(MessageReceivedEvent event, String[] args) {
         int numOfLinks = 3;
         String[] links = httpGETRequest(event, args, numOfLinks);
         System.out.println(links.length);
-        for(String link : links){
+        for (String link : links) {
             event.getChannel().sendMessage(link).queue();
         }
     }
+
     public String[] httpGETRequest(MessageReceivedEvent event, String[] args, int numOfLinks) {
         String[] results = new String[numOfLinks];
 
@@ -55,12 +59,12 @@ public class GoogleSearch extends Command {
             JsonNode jsonNode = objectMapper.readTree(url);
 
             // grabs the links in the JSON object and puts them into results
-            for(int i = 0; i < numOfLinks; i++){
+            for (int i = 0; i < numOfLinks; i++) {
                 results[i] = jsonNode.get("items").get(i).get("link").asText();
             }
 
         } catch (MalformedURLException e) {
-
+            event.getChannel().sendMessage("MalformedURLException").queue();
         } catch (IOException e) {
             event.getChannel().sendMessage("IOException").queue();
         }

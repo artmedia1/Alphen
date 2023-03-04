@@ -17,15 +17,19 @@ Alphen is a [Discord](https://discord.com) bot with currently 8 features that ac
 
 
 ### Social Media
-+ **!reddit [subreddit]** - Gets the first five threads on the HOT section of the subreddit.
++ **!reddit subreddit** - Gets the first five threads on the hot section of the **subreddit**.
 
 
 ### Dice and Coins
-+ **!random coin** - flip a coin.
-+ **!random dice** - roll a die.
++ **!flip** - Flips a coin.
++ **!roll x** - Rolls a dice with **x** number of sides.
 
 ### Google Search
-+ **!google [query]**  - Responds with the top 3 links from google for your query
++ **!google query**  - Responds with the top 3 links from google for your **query**.
+
+### Google Search
++ **!fx amount first second** - Converts an **amount** of **first** currency into **second**.
++ **!fx currencies** - Responds with list of available currencies codes.
 
 
 
@@ -46,6 +50,9 @@ Alphen is a [Discord](https://discord.com) bot with currently 8 features that ac
 
    [Get your Google Custom Search Engine ID Key](https://programmablesearchengine.google.com)  
    + `GOOGLE_SEARCH_ENGINE_ID=REPLACE_ME `
+
+   [Get your Exchange Rate API Key](https://www.exchangerate-api.com/docs/java-currency-api)
+   + `EXCHANGE_RATE_API_KEY=REPLACE_ME`
 
 
 2. Place the .env file in the same directory as the Alphen.jar located in `out/artifacts/Alphen_jar/`

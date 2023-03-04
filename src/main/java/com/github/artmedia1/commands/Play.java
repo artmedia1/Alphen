@@ -18,7 +18,7 @@ import java.util.Arrays;
 
 
 public class Play extends Command{
-    protected String description = "**!Play 'Title'** - Joins chat and plays the first video of 'Title' found on Youtube.";
+    protected String description = "**!Play Title** - Joins chat and plays the first video of **Title** found on Youtube.";
     public Play() {
         super("!play");
     }

@@ -17,7 +17,8 @@ public class CommandManager extends ListenerAdapter {
         FlipACoin flipACoin = new FlipACoin();
         Roll roll = new Roll();
         GoogleSearch googleSearch = new GoogleSearch();
-        fillMap(ping, help, play, reddit, twitter, flipACoin, roll, googleSearch);
+        FX fx = new FX();
+        fillMap(ping, help, play, reddit, twitter, flipACoin, roll, googleSearch, fx);
     }
 
     public void fillMap(Command... commands){ //you can use a construct called varargs to pass an arbitrary number of values to a method.

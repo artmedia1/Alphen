@@ -12,6 +12,7 @@ public class Help extends Command {
     FlipACoin flip = new FlipACoin();
     Roll roll = new Roll();
     GoogleSearch googleSearch = new GoogleSearch();
+    FX fx = new FX();
     public Help() {
         super("!help");
     }
@@ -19,7 +20,7 @@ public class Help extends Command {
     @Override
     public void execute(MessageReceivedEvent event, String[] args) {
         String message =
-                "List of things I can do\n" +
+                "**List of things I can do**\n" +
                         "**Help**\n" +
                         "> " + this.description + " \n" +
                         "> " + ping.description + " \n" +
@@ -31,6 +32,8 @@ public class Help extends Command {
                         "> " + roll.description + " \n" +
                         "\n**Google Search**\n" +
                         "> " + googleSearch.description + " \n" +
+                        "\n**Currency Conversion**\n" +
+                        "> " + fx.description + " \n" +
                         "\n**Other**\n" +
                         "> " + play.description;
 

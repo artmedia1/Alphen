@@ -29,7 +29,7 @@ public class Reddit extends Command {
     private Credentials credentials;
     private RedditClient client;
     private UserAgent userAgent;
-    protected String description = "**!reddit [subreddit]** - Gets the first five threads on the HOT section of the subreddit.";
+    protected String description = "**!reddit subreddit** - Gets the first five threads on the hot section of the **subreddit**.";
     public Reddit(){
         super("!reddit");
         this.tokens[0] = config.get("REDDIT_USERNAME");

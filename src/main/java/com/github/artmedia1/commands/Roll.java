@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import java.util.Random;
 
 public class Roll extends Command {
-    protected String description = "**!roll [x]** - rolls a dice with x number of sides";
+    protected String description = "**!roll x** - rolls a dice with **x** number of sides";
 
     public Roll(){
         super("!roll");
