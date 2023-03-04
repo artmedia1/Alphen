@@ -27,7 +27,7 @@ Alphen is a [Discord](https://discord.com) bot with currently 8 features that ac
 ### Google Search
 + **!google query**  - Responds with the top 3 links from google for your **query**.
 
-### Google Search
+### Currency Conversion
 + **!fx amount first second** - Converts an **amount** of **first** currency into **second**.
 + **!fx currencies** - Responds with list of available currencies codes.
 
