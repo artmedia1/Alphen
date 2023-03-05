@@ -55,7 +55,7 @@ Alphen is a [Discord](https://discord.com) bot with currently 8 features that ac
    + `EXCHANGE_RATE_API_KEY=REPLACE_ME`
 
 
-2. Place the .env file in the same directory as the Alphen.jar located in `out/artifacts/Alphen_jar/`
+2. Place the .env file in the same directory as the `Alphen.jar` located in `out/artifacts/Alphen_jar/`
 
 3. Run Alphen.jar
 
