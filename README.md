@@ -33,7 +33,7 @@ Alphen is a [Discord](https://discord.com) bot with currently 8 features that ac
 
 
 
-## Configuration
+## Getting Started
 1. Go to `.env.example`, rename file to `.env` and provide the following credentials:
 
    [Get your Discord token](https://discord.com/developers/applications)  
